@@ -31,7 +31,7 @@ pipeline{
             steps{
                 //sqa_6af406fef6b77bd5b833e93712f05161b7fcb8bf
                 withSonarQubeEnv(credentialsId: 'sonar-api') {
-                    sh 'mvn clean package sonar:sonar'
+                sh 'mvn clean package sonar:sonar'
                 }
             }
         }
