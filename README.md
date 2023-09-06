@@ -95,7 +95,7 @@ settings - repositories - create repository
 
 -  install Nexus plugins under jenkins
 
-### Now got to PiprlineSyntaxGenerator and choose below options
+### Now got to Pipeline Syntax Generator and choose below options
 ![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/5c4d1290-0b68-4c50-bb17-582f48157fcb)
 
 
