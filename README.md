@@ -49,3 +49,18 @@ To perform integration testing using Maven in a Java project
 -  Packaging the application.
 -  Running integration tests (if configured).
 ```
+
+# STATIC CODE ANALYSIS
+-  Static code analysis is a technique used to evaluate the source code of a program without actually executing it. The goal is to identify potential issues, vulnerabilities, code quality violations, and other problems in the codebase. Static analysis tools examine the code's structure, syntax, and patterns to find issues that might lead to bugs, security vulnerabilities, or maintainability problems.
+
+```
+-  In Maven, when you see sonar:sonar as part of a command, it is referring to the execution of a specific Maven plugin and its goal. The sonar:sonar goal is associated with the SonarQube Scanner for Maven plugin (also known as the SonarQube Maven Plugin).
+```
+
+-  Plugin: The "SonarQube Scanner for Maven" plugin is a Maven plugin designed to integrate with SonarQube, a code quality and static analysis platform.
+
+-  Goal: In Maven, a goal is a specific task that a plugin can perform. When you execute sonar:sonar, you are instructing Maven to run the sonar goal provided by the SonarQube Scanner for Maven plugin.
+
+-  **Purpose**: The purpose of running sonar:sonar is to trigger the analysis of your project's source code using SonarQube. This analysis evaluates the code for various quality, security, and maintainability issues and produces detailed reports that can be viewed in the SonarQube platform.
+
+-  __So, when you include sonar:sonar in your Maven command, you are essentially telling Maven to execute the SonarQube analysis task, which sends your project's code and analysis results to the SonarQube server for review and reporting.__

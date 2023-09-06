@@ -17,14 +17,22 @@ pipeline{
                 sh 'mvn verify -DskipunitTests'
             }
         }
-        stage("Package"){
-            steps{
-                sh 'mvn package'
-            }
-        }
-        stage('Build'){
+        // stage("Package"){
+        //     steps{
+        //         sh 'mvn package'
+        //     }
+        // }
+        stage('Maven Build'){
             steps{
                 sh 'mvn clean install'
+            }
+        }
+        stage('Static Code Analysis'){
+            steps{
+                //sqa_6af406fef6b77bd5b833e93712f05161b7fcb8bf
+                withSonarQubeEnv(credentialsId: 'sonar-api') {
+                    sh 'mvn clean package sonar:sonar'
+                }
             }
         }
     }
