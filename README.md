@@ -74,9 +74,14 @@ mvn clean install sonar:sonar (or) mvn clean package sonar:sonar
 
 -  **Quality Gate Check**: After the static code analysis is completed, SonarQube assesses the results against the predefined Quality Gate criteria. These criteria are defined in your SonarQube project's settings and typically include metrics and thresholds for various aspects of code quality.
 
-- [ ] jenkins is configured with sonar api token to authenticate, but, sonarqube needs to have a jenkins-webhook configured inorder to communicate about quality gate status
+- [X] jenkins is configured with sonar api token to authenticate, but, sonarqube needs to have a jenkins-webhook configured inorder to communicate about quality gate status
 
 -  -  SonarQube -> Administration -> Configuration -> Webhooks 
 -  -  **Name - some-name**
 -  -  **URL - http://54.243.8.37:8080/sonarqube-webhook/ (Jenkins URL)**
 -  -  _No secret_
+
+# NEXUS SETUP
+-  Now inorder to store out war/jar files in Nexus repository, we can follow below steps
+
+[Nexus installation](https://www.howtoforge.com/how-to-install-and-configure-nexus-repository-manager-on-ubuntu-20-04/)
