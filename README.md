@@ -44,7 +44,7 @@ To perform integration testing using Maven in a Java project
 -  mvn verify: This part of the command triggers the Maven build, specifically the verify phase. During this phase, Maven executes various tasks, including:
 
 ```
-- Compiling the source code.
+-  Compiling the source code.
 -  Running unit tests (by default).
 -  Packaging the application.
 -  Running integration tests (if configured).
