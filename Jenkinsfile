@@ -61,7 +61,7 @@ pipeline{
                     ], 
                         credentialsId: 'nexus-auth', 
                         groupId: 'com.example', 
-                        nexusUrl: '54.196.245.6:8081/repository/', 
+                        nexusUrl: '54.196.245.6:8081', 
                         nexusVersion: 'nexus3', 
                         protocol: 'http', 
                         repository: 'cicd-app-release', 
