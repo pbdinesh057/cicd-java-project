@@ -85,3 +85,13 @@ mvn clean install sonar:sonar (or) mvn clean package sonar:sonar
 -  Now inorder to store out war/jar files in Nexus repository, we can follow below steps
 
 [Nexus installation](https://www.howtoforge.com/how-to-install-and-configure-nexus-repository-manager-on-ubuntu-20-04/)
+
+## steps to create a custom repo in Nexus
+```
+settings - repositories - create repository 
+```
+
+-  give some name and choose **Release** option and hit **create repository**
+
+-  install Nexus plugins under jenkins
+
