@@ -111,4 +111,4 @@ nexusArtifactUploader artifacts: [[artifactId: 'springboot', classifier: '', fil
 ## Uploaded Artifact to Nexus
 -   inorder to generate dynamic versioned snapshot, follow below steps
 - -   install **pipeline utility steps**
-  -   **def** **readPomVersion = readMavenPom file: 'pom.xml'** referenced as **version: readPomVersion.version**
+  -   **def** **readPomVersion = readMavenPom file: 'pom.xml'** _referenced as_ **version: readPomVersion.version**
