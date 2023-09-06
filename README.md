@@ -98,10 +98,10 @@ settings - repositories - create repository
 ### Now got to Pipeline Syntax Generator and choose below options
 ![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/5c4d1290-0b68-4c50-bb17-582f48157fcb)
 
-
+## We get below details from pom.xml & Nexus UI
 ![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/9cdacb66-03c2-4f65-9f7a-e883b09eacc2)
 
-### We get below details from pom.xml file
+
 ![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/555aa138-8381-48f6-81a1-a85ffc429b9e)
 
 ```
