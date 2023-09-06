@@ -55,7 +55,6 @@ To perform integration testing using Maven in a Java project
 
 ```
 mvn clean install sonar:sonar (or) mvn clean package sonar:sonar
-
 ```
 -  In Maven, when you see sonar:sonar as part of a command, it is referring to the execution of a specific Maven plugin and its goal. The sonar:sonar goal is associated with the SonarQube Scanner for Maven plugin (also known as the SonarQube Maven Plugin).
 
