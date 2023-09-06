@@ -50,6 +50,7 @@ pipeline{
             steps{
                 script{
                     def readPomVersion = readMavenPom file: 'pom.xml'
+                    def nexusrepo = readPomVersion.version.contains('SNAPSHOT') ? 'cicd-app-snapshots' : 'cicd-app-release'
                     nexusArtifactUploader artifacts: [
                         [artifactId: 'springboot', 
                         classifier: '', 
@@ -62,7 +63,7 @@ pipeline{
                         nexusUrl: '54.196.245.6:8081', 
                         nexusVersion: 'nexus3', 
                         protocol: 'http', 
-                        repository: 'cicd-app-release', 
+                        repository: nexusrepo, 
                         version: readPomVersion.version
                 }
             }
