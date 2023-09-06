@@ -95,3 +95,14 @@ settings - repositories - create repository
 
 -  install Nexus plugins under jenkins
 
+### Now got to PiprlineSyntaxGenerator and choose below options
+![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/791b702d-73c1-41da-a013-2660455dc645)
+
+![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/9cdacb66-03c2-4f65-9f7a-e883b09eacc2)
+
+### We get below details from pom.xml file
+![image](https://github.com/pbdinesh057/cicd-java-project/assets/84852077/555aa138-8381-48f6-81a1-a85ffc429b9e)
+
+```
+nexusArtifactUploader artifacts: [[artifactId: 'springboot', classifier: '', file: 'target/Uber.jar', type: 'jar']], credentialsId: 'nexus-auth', groupId: 'com.example', nexusUrl: '54.196.245.6:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'cicd-app-release', version: '1.0.0'
+```
