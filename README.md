@@ -63,4 +63,4 @@ To perform integration testing using Maven in a Java project
 
 -  **Purpose**: The purpose of running sonar:sonar is to trigger the analysis of your project's source code using SonarQube. This analysis evaluates the code for various quality, security, and maintainability issues and produces detailed reports that can be viewed in the SonarQube platform.
 
--  __So, when you include sonar:sonar in your Maven command, you are essentially telling Maven to execute the SonarQube analysis task, which sends your project's code and analysis results to the SonarQube server for review and reporting.__
+ __So, when you include sonar:sonar in your Maven command, you are essentially telling Maven to execute the SonarQube analysis task, which sends your project's code and analysis results to the SonarQube server for review and reporting.__
