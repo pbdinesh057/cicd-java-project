@@ -70,7 +70,7 @@ mvn clean install sonar:sonar (or) mvn clean package sonar:sonar
 # QUALITY GATE STATUS
 -  "Quality Gate" is a set of predefined criteria or quality thresholds that your code must meet to be considered of sufficient quality. Quality Gates are used to assess the overall quality, maintainability, and reliability of your codebase. The Quality Gate status indicates whether your code has passed or failed these criteria.
 
-**Static Code Analysis**: As part of your Jenkins pipeline, you run static code analysis using SonarQube. This analysis examines your codebase for issues such as code smells, bugs, security vulnerabilities, and code duplications.
+-  **Static Code Analysis**: As part of your Jenkins pipeline, you run static code analysis using SonarQube. This analysis examines your codebase for issues such as code smells, bugs, security vulnerabilities, and code duplications.
 
-**Quality Gate Check**: After the static code analysis is completed, SonarQube assesses the results against the predefined Quality Gate criteria. These criteria are defined in your SonarQube project's settings and typically include metrics and thresholds for various aspects of code quality.
+-  **Quality Gate Check**: After the static code analysis is completed, SonarQube assesses the results against the predefined Quality Gate criteria. These criteria are defined in your SonarQube project's settings and typically include metrics and thresholds for various aspects of code quality.
 
