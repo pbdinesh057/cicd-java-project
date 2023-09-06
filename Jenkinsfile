@@ -63,7 +63,7 @@ pipeline{
                         nexusUrl: '54.196.245.6:8081', 
                         nexusVersion: 'nexus3', 
                         protocol: 'http', 
-                        repository: cicd-app-snapshots, 
+                        repository: "cicd-app-snapshots", 
                         version: readPomVersion.version
                 }
             }
