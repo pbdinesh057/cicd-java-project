@@ -65,4 +65,12 @@ mvn clean install sonar:sonar (or) mvn clean package sonar:sonar
 
 -  **Purpose**: The purpose of running sonar:sonar is to trigger the analysis of your project's source code using SonarQube. This analysis evaluates the code for various quality, security, and maintainability issues and produces detailed reports that can be viewed in the SonarQube platform.
 
-#### -  **_So, when you include sonar:sonar in your Maven command, you are essentially telling Maven to execute the SonarQube analysis task, which sends your project's code and analysis results to the SonarQube server for review and reporting._**
+**_So, when you include sonar:sonar in your Maven command, you are essentially telling Maven to execute the SonarQube analysis task, which sends your project's code and analysis results to the SonarQube server for review and reporting._**
+
+# QUALITY GATE STATUS
+-  "Quality Gate" is a set of predefined criteria or quality thresholds that your code must meet to be considered of sufficient quality. Quality Gates are used to assess the overall quality, maintainability, and reliability of your codebase. The Quality Gate status indicates whether your code has passed or failed these criteria.
+
+**Static Code Analysis**: As part of your Jenkins pipeline, you run static code analysis using SonarQube. This analysis examines your codebase for issues such as code smells, bugs, security vulnerabilities, and code duplications.
+
+**Quality Gate Check**: After the static code analysis is completed, SonarQube assesses the results against the predefined Quality Gate criteria. These criteria are defined in your SonarQube project's settings and typically include metrics and thresholds for various aspects of code quality.
+
