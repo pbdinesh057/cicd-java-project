@@ -107,3 +107,8 @@ settings - repositories - create repository
 ```
 nexusArtifactUploader artifacts: [[artifactId: 'springboot', classifier: '', file: 'target/Uber.jar', type: 'jar']], credentialsId: 'nexus-auth', groupId: 'com.example', nexusUrl: '54.196.245.6:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'cicd-app-release', version: '1.0.0'
 ```
+
+## Uploaded Artifact to Nexus
+-   inorder to generate dynamic versioned snapshot, follow below steps
+- -   install **pipeline utility steps**
+  -   def **readPomVersion = readMavenPom file: 'pom.xml'** referenced as **version: readPomVersion.version**
